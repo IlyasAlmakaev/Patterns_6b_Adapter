@@ -13,6 +13,10 @@
 		2815364F1F1F69F3000C8007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2815364D1F1F69F3000C8007 /* Main.storyboard */; };
 		281536511F1F69F3000C8007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281536501F1F69F3000C8007 /* Assets.xcassets */; };
 		281536541F1F69F3000C8007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281536521F1F69F3000C8007 /* LaunchScreen.storyboard */; };
+		2815365D1F1F6AB2000C8007 /* Charger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2815365C1F1F6AB2000C8007 /* Charger.m */; };
+		281E686F1F20881500E1B41A /* EuropeanNotebookCharger.m in Sources */ = {isa = PBXBuildFile; fileRef = 281E686E1F20881500E1B41A /* EuropeanNotebookCharger.m */; };
+		281E68721F208AD900E1B41A /* USANotebookCharger.m in Sources */ = {isa = PBXBuildFile; fileRef = 281E68711F208AD900E1B41A /* USANotebookCharger.m */; };
+		281E68751F208CBA00E1B41A /* USANotebookEuropeanAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 281E68741F208CBA00E1B41A /* USANotebookEuropeanAdapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,15 @@
 		281536501F1F69F3000C8007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		281536531F1F69F3000C8007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		281536551F1F69F3000C8007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2815365B1F1F6AB2000C8007 /* Charger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Charger.h; sourceTree = "<group>"; };
+		2815365C1F1F6AB2000C8007 /* Charger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Charger.m; sourceTree = "<group>"; };
+		281536611F1F6D99000C8007 /* EuropeanNotebookChargerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EuropeanNotebookChargerDelegate.h; sourceTree = "<group>"; };
+		281E686D1F20881500E1B41A /* EuropeanNotebookCharger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EuropeanNotebookCharger.h; sourceTree = "<group>"; };
+		281E686E1F20881500E1B41A /* EuropeanNotebookCharger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EuropeanNotebookCharger.m; sourceTree = "<group>"; };
+		281E68701F208AD900E1B41A /* USANotebookCharger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USANotebookCharger.h; sourceTree = "<group>"; };
+		281E68711F208AD900E1B41A /* USANotebookCharger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USANotebookCharger.m; sourceTree = "<group>"; };
+		281E68731F208CBA00E1B41A /* USANotebookEuropeanAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USANotebookEuropeanAdapter.h; sourceTree = "<group>"; };
+		281E68741F208CBA00E1B41A /* USANotebookEuropeanAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USANotebookEuropeanAdapter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,15 @@
 			children = (
 				281536471F1F69F3000C8007 /* AppDelegate.h */,
 				281536481F1F69F3000C8007 /* AppDelegate.m */,
+				2815365B1F1F6AB2000C8007 /* Charger.h */,
+				2815365C1F1F6AB2000C8007 /* Charger.m */,
+				281536611F1F6D99000C8007 /* EuropeanNotebookChargerDelegate.h */,
+				281E686D1F20881500E1B41A /* EuropeanNotebookCharger.h */,
+				281E686E1F20881500E1B41A /* EuropeanNotebookCharger.m */,
+				281E68701F208AD900E1B41A /* USANotebookCharger.h */,
+				281E68711F208AD900E1B41A /* USANotebookCharger.m */,
+				281E68731F208CBA00E1B41A /* USANotebookEuropeanAdapter.h */,
+				281E68741F208CBA00E1B41A /* USANotebookEuropeanAdapter.m */,
 				2815364A1F1F69F3000C8007 /* ViewController.h */,
 				2815364B1F1F69F3000C8007 /* ViewController.m */,
 				2815364D1F1F69F3000C8007 /* Main.storyboard */,
@@ -151,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2815365D1F1F6AB2000C8007 /* Charger.m in Sources */,
+				281E68751F208CBA00E1B41A /* USANotebookEuropeanAdapter.m in Sources */,
+				281E686F1F20881500E1B41A /* EuropeanNotebookCharger.m in Sources */,
 				2815364C1F1F69F3000C8007 /* ViewController.m in Sources */,
+				281E68721F208AD900E1B41A /* USANotebookCharger.m in Sources */,
 				281536491F1F69F3000C8007 /* AppDelegate.m in Sources */,
 				281536461F1F69F3000C8007 /* main.m in Sources */,
 			);
@@ -314,6 +340,7 @@
 				2815365A1F1F69F3000C8007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

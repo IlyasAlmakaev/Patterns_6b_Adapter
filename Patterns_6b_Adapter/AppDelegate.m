@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "USANotebookEuropeanAdapter.h"
+#import "Charger.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +16,22 @@
 
 @implementation AppDelegate
 
+- (void)makeTheNotebookCharge:(Charger *)aCharger {
+    [aCharger charge];
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    EuropeanNotebookCharger *euroCharger = [[EuropeanNotebookCharger alloc] init];
+    
+    [self makeTheNotebookCharge:euroCharger];
+    
+    USANotebookCharger *charger = [[USANotebookCharger alloc] init];
+    USANotebookEuropeanAdapter *adapter = [[USANotebookEuropeanAdapter alloc] initWithUSANotebookCharger:charger];
+    
+    [self makeTheNotebookCharge:adapter];
+    
     return YES;
 }
 
