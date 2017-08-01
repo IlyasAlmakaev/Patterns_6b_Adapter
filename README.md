@@ -11,4 +11,7 @@
 Адаптируемый (Adaptee) - розетка с квадратными дырками.
 Это второй вариант реализации этого паттерна.(тут работа с делегатами)
 
+![pattern_adapter_6b](https://user-images.githubusercontent.com/8353437/28814333-52ece284-76c7-11e7-8d4a-693a5b672f8a.png)
+
+
 ![pattern_adapter_6b2](https://user-images.githubusercontent.com/8353437/28814089-5b9234c6-76c6-11e7-95cc-876570152f7c.png)
